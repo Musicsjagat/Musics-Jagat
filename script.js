@@ -14,7 +14,8 @@ const categoryDropdown = document.getElementById('category-dropdown');
 
 // === PLAYLIST & STATE ===
 // YAHAN APNE GAANO KO CATEGORY KE SAATH DAALEIN
-const masterPlaylist = [
+const masterPlaylist = 
+    [
     { type: 'mp3', title: 'Best Hindi Patriotic Songs', src: 'https://cepdelaoakyubgkvpppb.supabase.co/storage/v1/object/public/admin-songs/Patriotic%20Songs%20for%20Independence%20Day%20_%20Best%20Hindi%20Songs%20for%2015th%20August%20_%20Best%20Hindi%20Patriotic%20Songs(MP3_160K).mp3', image: './mjlogo.png', download: 'https://linksense.in/Best_Hindi_Patriotic_Songs', category: 'Patriotic songs' },
     { type: 'mp3', title: 'Arijit Singh_ Ae Watan ', src: 'https://cepdelaoakyubgkvpppb.supabase.co/storage/v1/object/public/admin-songs/Arijit%20Singh_%20Ae%20Watan%20_%20Desh%20Mere%20_%20Lehra%20Do%20_%20Ashq%20Na%20Ho%20_%20Desh%20Bhakti%20Song(MP3_160K).mp3', image: './mjlogo.png', download: 'https://linksense.in/Arijit_Singh_Ae_Watan', category: 'Patriotic songs' },
     { type: 'mp3', title: 'Best of Pritam _ Nonstop Latest romantic songs ', src: 'https://cepdelaoakyubgkvpppb.supabase.co/storage/v1/object/public/admin-songs/Best%20of%20Pritam%20_%20Nonstop%20Latest%20romantic%20songs%20_%20Sorojit%20Biswas%20_(M4A_128K).m4a', image: './mjlogo.png', download: 'https://linksense.in/Best_of_Pritam', category: 'Love Songs' },

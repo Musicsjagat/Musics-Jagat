@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="music-player-container">
+            
+            <!-- Naya Header jismein Title aur Menu Icon hai -->
+            <div class="player-header">
+                <h1 class="player-title">MJ Player</h1>
+                <div class="category-menu">
+                    <button id="category-menu-btn" class="nav-button">☰</button>
+                    <div id="category-dropdown" class="dropdown-content">
+                        <!-- Categories yahan JavaScript se aayengi -->
+                    </div>
+                </div>
+            </div>
+
+            <img src="./mjlogo.png" id="song-image" alt="Album Art">
+
+            <div id="song-title" class="song-title">Player Load Ho Raha Hai...</div>
+            
+            <audio id="audio-player"></audio>
+            <div id="youtube-player" style="position: absolute; top: -9999px; left: -9999px;"></div>
+
+            <div class="navigation-controls">
+                <button id="prev-btn" class="nav-button">◀◀</button>
+                <button id="play-pause-btn" class="nav-button">▶</button>
+                <button id="next-btn" class="nav-button">▶▶</button>
+            </div>
+            
+            <a id="download-link" href="#" class="download-button" download>Download</a>
+
+            <div class="youtube-input-group">
+                <input type="text" id="youtube-url" placeholder="Add your YT song link here..." disabled>
+                <button id="add-yt-btn" disabled>Add song</button>
+            </div>
+        </div>
+
+        <div class="playlist-container">
+            <h2 class="playlist-title">Playlist</h2>
+            <ul id="playlist-list">
+                <!-- Playlist ke gaane yahan aayenge -->
+            </ul>
+        </div>
+
+        <div class="ad-space">
+            <script async="async" data-cfasync="false" src="//pl26953775.profitableratecpm.com/e54c93f45e444a48f6cc1cbbd07d09d2/invoke.js"></script>
+            <div id="container-e54c93f45e444a48f6cc1cbbd07d09d2"></div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./script.js"></script>   
+</body>
+</html>

@@ -87,7 +87,10 @@ function filterPlaylist(category) {
     if (category === 'All') {
         currentPlaylist = [...masterPlaylist];
     } else {
-        currentPlaylist = masterPlaylist.filter(song => song.category === category);
+        currentPlaylist = masterPlaylist.filter(song => 
+    song.category.split(',').map(c => c.trim()).includes(category)
+);
+
     }
     updatePlaylistUI();
     if(currentPlaylist.length > 0) {
